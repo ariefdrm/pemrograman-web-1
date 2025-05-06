@@ -13,10 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/lat4', function () {
+    return view('latihan4');
+});
+
+Route::get('/4', function () {
+    return view('pertemuan4');
+});
+
 Route::get('/lat3', function () {
     return view('latihan3');
 });
-
 
 Route::get('/arief-darmawan.com', function () {
     return view('arief');
