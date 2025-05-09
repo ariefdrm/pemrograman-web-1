@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>Ini about page</h1>
+    <h2></h2>
 </body>
 </html>
