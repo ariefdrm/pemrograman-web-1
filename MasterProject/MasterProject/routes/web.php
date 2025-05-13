@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Symfony\Component\Mailer\SentMessage;
 
@@ -20,6 +21,15 @@ Route::get('/tugas1', function () {
 
 Route::get("/tugas-pertemuan-5", function() {
     return "hello, world";
+
+});
+
+Route::get('5', function() {
+    return view('pertemuan5');
+});
+
+Route::get('/lat4', function () {
+    return view('latihan4');
 });
 
 Route::get('/4', function () {
