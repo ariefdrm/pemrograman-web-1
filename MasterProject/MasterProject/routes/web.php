@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('5', function() {
+    return view('pertemuan5');
+});
+
 Route::get('/lat4', function () {
     return view('latihan4');
 });
