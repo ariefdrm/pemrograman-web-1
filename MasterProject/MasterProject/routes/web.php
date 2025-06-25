@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\Mailer\SentMessage;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +14,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/lat4', function () {
-    return view('latihan4');
+Route::get('/tugas1', function () {
+    return view('tugas1');
+});
+
+Route::get("/tugas-pertemuan-5", function() {
+    return "hello, world";
 });
 
 Route::get('/4', function () {
     return view('pertemuan4');
+});
+
+Route::get('/lat3', function () {
+    return view('latihan3');
 });
 
 Route::get('/lat3', function () {
@@ -56,3 +65,7 @@ Route::get('/about', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
