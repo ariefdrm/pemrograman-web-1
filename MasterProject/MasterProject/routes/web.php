@@ -2,26 +2,24 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use Symfony\Component\Mailer\SentMessage;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-Route::get('/tgs', function () {
-    return view('tugas');
+Route::get('latihan-mandiri', function () {
+    return view('testing', ['src' => [
+        'assets/images/g1.jpg',
+        'assets/images/g2.png',
+        'assets/images/g3.jpg',
+        'assets/images/g4.jpg',
+    ],
+    'message' => 'Selamat datang di Laravel',
+    ]);
 });
 
-Route::get("/tugas-pertemuan-5", function() {
-    return "hello, world";
+Route::get('/tugas1', function () {
+    return view('tugas1');
+});
 
+Route::get('/tugas-pertemuan-5', function () {
+    return 'hello, world';
 });
 
 Route::get('6', function() {
@@ -34,6 +32,8 @@ Route::get('5', function() {
 
 Route::get('/lat4', function () {
     return view('latihan4');
+Route::get('/tugas-pertemuan-5', function () {
+    return 'hello, world';
 });
 
 Route::get('/4', function () {
@@ -83,3 +83,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+});
