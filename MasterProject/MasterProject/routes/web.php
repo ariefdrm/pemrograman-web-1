@@ -15,13 +15,17 @@ use Symfony\Component\Mailer\SentMessage;
 |
 */
 
-Route::get('/tugas1', function () {
-    return view('tugas1');
+Route::get('/tgs', function () {
+    return view('tugas');
 });
 
 Route::get("/tugas-pertemuan-5", function() {
     return "hello, world";
 
+});
+
+Route::get('6', function() {
+    return view('pertemuan6');
 });
 
 Route::get('5', function() {

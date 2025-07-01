@@ -37,8 +37,8 @@
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="Cari Data" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">CariData</button>
           </form>
         </div>
       </div>
@@ -55,13 +55,15 @@
             <li class="list-group-item">
                 <img id="mainImage" src="assets/images/g2.png" class="img-fluid" alt="..."> 
             </li>
+          </ul>
+          <div class="card-footer">
             <li class="list-group-item">
               <div class="row">
                 <div class="col-2">
                   <nav aria-label="...">
                     <ul class="pagination pagination-md">
                       <li class="page-item" aria-current="page">
-                        <span class="page-link bg-secondary text-light">1</span>
+                        <a class="page-link bg-secondary text-light">1</a>
                       </li>
                       <li class="page-item"><a class="page-link bg-dark text-light" href="#">2</a></li>
                       <li class="page-item"><a class="page-link bg-secondary text-light" href="#">3</a></li>
@@ -75,7 +77,7 @@
                 </div>
               </div>
             </li>
-          </ul>
+          </div>
         </div>
     </div>
     {{-- End content --}}
