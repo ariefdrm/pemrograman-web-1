@@ -14,8 +14,8 @@ Route::get('latihan-mandiri', function () {
     ]);
 });
 
-Route::get('/tugas1', function () {
-    return view('tugas1');
+Route::get('/tgs', function () {
+    return view('tugas');
 });
 
 Route::get('/tugas-pertemuan-5', function () {

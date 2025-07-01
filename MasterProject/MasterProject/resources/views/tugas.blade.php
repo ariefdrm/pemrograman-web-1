@@ -50,10 +50,10 @@
     <div class="container d-flex justify-content-center align-items-center">
         <div class="card my-3">
             <div class="card-header">
-                <h1>GAMBAR GEDUNG UNAMA Jambi </h1>
+                <h1>Gambar Gedung UNAMA Jambi</h1>
             </div>
             <div class="card-body">
-                <img id="mainImage" src="assets/images/g2.png" class="img-fluid" alt="...">
+                <img id="mainImage" src="assets/images/g2.png" class="img-fluid" alt="gambar gedung unama jambi">
             </div>
             <div class="card-footer">
                 <div class="row align-items-start">
