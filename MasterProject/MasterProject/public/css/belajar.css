@@ -1,0 +1,32 @@
+h1 {
+    color: pink;
+}
+
+body {
+    background-color: #888888;
+    background-image: url("/assets/images/g1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+    
+}
+
+P {
+
+}
+
+#warnabiru {
+    color: blue;
+}
+
+#garisditulisan {
+    text-decoration: line-through;
+}
+
+.warnamerah {
+    color: red;
+}
+
+.garisditulisan {
+    text-decoration: line-through;
+}
