@@ -13,28 +13,51 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand text-light" href="#">Beranda</a>
+            <a class="navbar-brand text-light" href="#">Latihan</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Tentang Unama</a>
+                        <a class="nav-link text-secondary" href="#">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Fakultas</a>
+                        <div class="dropdown">
+                          <button class="nav-link text-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tentang UNAMA
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sejarah</a></li>
+                            <li><a class="dropdown-item" href="#">Visi Misi</a></li>
+                            <li><a class="dropdown-item" href="#">Fasilitas Dan Layanan</a></li>
+                            <li><a class="dropdown-item" href="#">Tupoksi</a></li>
+                            <li><a class="dropdown-item" href="#">Struktur Organisasi Dan Layanan</a></li>
+                          </ul>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Pasca Sarjana</a>
+                        <div class="dropdown dropdown-hover">
+                          <button class="nav-link text-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Fakultas
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Akademik</a>
+                        <a class="nav-link text-secondary" href="#">Pasca Sarjana</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Pendaftaran</a>
+                        <a class="nav-link text-secondary" href="#">Akademik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Pendaftaran</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -74,6 +97,25 @@
                 </div>
             </div>
             {{-- End content --}}
+
+    <script>
+      const dropdowns = document.querySelectorAll(".dropdown");
+
+      dropdowns.forEach(dropdown => {
+        const button = dropdown.querySelector("button");
+        const menu = dropdown.querySelector(".dropdown-menu");
+
+        dropdown.addEventListener("mouseenter", () => {
+          menu.classList.add("show");
+          button.setAttribute("aria-expanded", "true");
+        });
+
+        dropdown.addEventListener("mouseleave", () => {
+          menu.classList.remove("show");
+          button.setAttribute("aria-expanded", "false");
+        });
+      });
+    </script>
 </body>
 
 </html>
