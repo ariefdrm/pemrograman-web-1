@@ -44,17 +44,38 @@
                             Fakultas
                           </button>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Fakultas Ilmu Komputer</a></li>
+                            <li><a class="dropdown-item" href="#">Fakultas Ilmu manajemen dan bisnis</a></li>
                           </ul>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">Pasca Sarjana</a>
+                        <div class="dropdown dropdown-hover">
+                          <button class="nav-link text-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pasca Sarjana
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">S2 -Magister Sistem Informasi</a></li>
+                          </ul>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">Akademik</a>
+                        <div class="dropdown dropdown-hover">
+                          <button class="nav-link text-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Akademik
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Panduan Aplikasi</a></li>
+                            <li><a class="dropdown-item" href="#">Kalender Akademik</a></li>
+                            <li><a class="dropdown-item" href="#">Buku Pedoman Akademik</a></li>
+                            <li><a class="dropdown-item" href="#">Aturan Akademik</a></li>
+                            <li><a class="dropdown-item" href="#">Fasilitas Dan Layanan</a></li>
+                            <li><a class="dropdown-item" href="#">Informasi Beasiswa</a></li>
+                            <li><a class="dropdown-item" href="#">Ekstrakulikuler</a></li>
+                            <li><a class="dropdown-item" href="#">Kode Etik</a></li>
+                            <li><a class="dropdown-item" href="#">SK & Sertifikat Akreditas</a></li>
+                          </ul>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-secondary" href="#">Pendaftaran</a>
